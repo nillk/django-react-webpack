@@ -1,0 +1,28 @@
+{
+  "name": "rndmenu",
+  "version": "1.0.0",
+  "description": "Seoule RnD center menu",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nillk/rnd-menu.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nillk/rnd-menu/issues"
+  },
+  "homepage": "https://github.com/nillk/rnd-menu#readme",
+  "devDependencies": {
+    "babel": "^6.5.2",
+    "babel-loader": "^6.2.4",
+    "babel-preset-es2015": "^6.9.0",
+    "babel-preset-react": "^6.11.1",
+    "react": "^15.2.1",
+    "react-dom": "^15.2.1",
+    "webpack-bundle-tracker": "0.0.93"
+  }
+}
