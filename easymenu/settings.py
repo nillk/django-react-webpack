@@ -53,10 +53,11 @@ MIDDLEWARE_CLASSES = (
 
 ROOT_URLCONF = 'easymenu.urls'
 
+TEMPLATES_DIRS = os.path.join(BASE_DIR, 'templates')
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': ['templates'],
+        'DIRS': [TEMPLATES_DIRS],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -103,12 +104,12 @@ USE_TZ = True
 STATIC_URL = '/static/'
 # STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 
-# static file 경로 설정
+# set static file dirs
 STATICFILES_DIRS = (
     os.path.join(BASE_DIR, 'assets'),
 )
 
-# bundle 경로 설정
+# set bundle path
 WEBPACK_LOADER = {
     'DEFAULT' : {
         'BUNDLE_DIR_NAME': 'bundles/',
